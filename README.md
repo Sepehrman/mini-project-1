@@ -1,1 +1,1 @@
-# AI_Mini_Project_1
+# mini-project-1
