@@ -1,9 +1,9 @@
 # Bike Sharing Demand Prediction
 
-Build a complete regression system to predict continuous outcomes using real-world data. 
+Build a complete regression system to predict continuous outcomes using real world data. 
 
 ## Problem Description and Motivation
-The purpose of this project is to predict the hourly number of bike rentals using the data provided. In this case, not every data is useful so accurate EDA is needed. Accurate prediction of bike rental demand is important for bike-sharing systems to manage bike availability efficiently, reduce shortages during peak hours, and improve overall user experience. By understanding the factors that influence bike rental behaviour, this project aims to build a reliable and interpretable prediction pipeline.
+The purpose of this project is to predict the hourly number of bike rentals using the data provided. In this case, not every data is useful so accurate EDA is needed. Accurate prediction of bike rental demand is important for bike sharing systems to manage bike availability efficiently, reduce shortages during peak hours, and improve overall user experience. By understanding the factors that influence bike rental behaviour, this project aims to build a reliable and interpretable prediction pipeline.
 
 ---
 
@@ -71,7 +71,7 @@ pip install pandas numpy matplotlib scikit-learn
 
 ## Results Summary
 
-Model performance was evaluated using a validation split of the training data. Multiple regression models were compared to assess their ability to predict hourly bike rental demand. The polynomial regression model achieved the best overall performance, as it was able to capture the non-linear relationships between time-based features, weather conditions, and rental demand that were identified during exploratory data analysis.
+Model performance was evaluated using a validation split of the training data. Multiple regression models were compared to assess their ability to predict hourly bike rental demand. 
 
 ### Model Comparison (Validation Set)
 
@@ -84,5 +84,17 @@ Model performance was evaluated using a validation split of the training data. M
 | Lasso (α = 1.0)           | 152.15   | 111.91   | 0.299   |
 | Lasso (α = 10.0)          | 153.21   | 113.01   | 0.289   |
 
-These results indicate that incorporating non-linear and interaction effects improves predictive accuracy compared to simpler linear models. Time-related features such as hour of day and working day status were the strongest contributors to model performance.
+These results indicate that incorporating non linear and interaction effects improves predictive accuracy compared to simpler linear models. Time related features such as hour of day and working day status were the strongest contributors to model performance. Bike rental demand is moderately predictable, with clear time and weather based patterns.
+
+### Best Model Performance
+
+The best-performing model is **Polynomial Regression (degree = 3)**, which achieved the following results on the validation set:
+
+- **R²:** 0.528  
+- **RMSE:** ~124  
+- **MAE:** ~88  
+
+An R² value of 0.528 indicates that the model explains approximately **53% of the variance** in hourly bike rental demand. This represents **moderate predictive power**, suggesting that bike rental behaviour follows consistent patterns influenced by time and weather. The remaining **47% of variance** is unexplained, likely due to factors not captured in the dataset.
+
+
 
