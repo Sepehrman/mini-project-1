@@ -1,5 +1,7 @@
 # Bike Sharing Demand Prediction
 
+Build a complete regression system to predict continuous outcomes using real-world data. 
+
 ## Problem Description and Motivation
 The purpose of this project is to predict the hourly number of bike rentals using the data provided. In this case, not every data is useful so accurate EDA is needed. Accurate prediction of bike rental demand is important for bike-sharing systems to manage bike availability efficiently, reduce shortages during peak hours, and improve overall user experience. By understanding the factors that influence bike rental behaviour, this project aims to build a reliable and interpretable prediction pipeline.
 
