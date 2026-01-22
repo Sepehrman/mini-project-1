@@ -40,3 +40,12 @@ The dataset contains hourly bike rental records spanning two years. The task is 
 ### Required Libraries
 ```bash
 pip install pandas numpy matplotlib scikit-learn
+```
+
+## Member Contributions
+- Bryan: EDA, Analysis
+- Sepehr: Modelling, Analysis
+
+## Resuts Summary
+
+
