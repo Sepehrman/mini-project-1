@@ -73,6 +73,8 @@ pip install pandas numpy matplotlib scikit-learn
 
 Model performance was evaluated using a validation split of the training data. Multiple regression models were compared to assess their ability to predict hourly bike rental demand. 
 
+<img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/31b8f482-ac8b-4486-a828-a99238b069f9" />
+
 ### Model Comparison (Validation Set)
 
 | Model                     | RMSE     | MAE      | R²      |
@@ -83,6 +85,8 @@ Model performance was evaluated using a validation split of the training data. M
 | Linear Regression         | 152.12   | 111.95   | 0.299   |
 | Lasso (α = 1.0)           | 152.15   | 111.91   | 0.299   |
 | Lasso (α = 10.0)          | 153.21   | 113.01   | 0.289   |
+
+<img width="1762" height="564" alt="image" src="https://github.com/user-attachments/assets/e45da7da-f27e-44fe-9eb7-81d2cca4a365" />
 
 These results indicate that incorporating non linear and interaction effects improves predictive accuracy compared to simpler linear models. Time related features such as hour of day and working day status were the strongest contributors to model performance. Bike rental demand is moderately predictable, with clear time and weather based patterns.
 
