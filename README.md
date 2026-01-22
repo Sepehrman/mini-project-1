@@ -33,7 +33,7 @@ The dataset contains hourly bike rental records spanning two years. The task is 
 - **registereds**- number of registered user rentals initiated
 - **count** - number of total rentals
 
-### **Dropped Features after EDA**
+### Dropped Features after EDA
 
 1.   ***casual and registered*** = Does not influence real world prediction, it is only known after the rental. Casual and Registered also indicates how many are rented, therefore cannot be included in the prediction. It gives the model the answer already
 2.   ***atemp*** = about the same as temp, unecessary and redundant feature
