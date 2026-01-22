@@ -69,6 +69,20 @@ pip install pandas numpy matplotlib scikit-learn
 - Bryan: EDA, Analysis
 - Sepehr: Modelling, Analysis
 
-## Resuts Summary
+## Results Summary
 
+Model performance was evaluated using a validation split of the training data. Multiple regression models were compared to assess their ability to predict hourly bike rental demand. The polynomial regression model achieved the best overall performance, as it was able to capture the non-linear relationships between time-based features, weather conditions, and rental demand that were identified during exploratory data analysis.
+
+### Model Comparison (Validation Set)
+
+| Model                     | RMSE     | MAE      | R²      |
+|---------------------------|----------|----------|---------|
+| Polynomial (degree = 3)   | 124.83   | 88.26    | 0.528   |
+| Polynomial (degree = 2)   | 133.58   | 99.39    | 0.459   |
+| Lasso (α = 0.1)           | 152.12   | 111.95   | 0.299   |
+| Linear Regression         | 152.12   | 111.95   | 0.299   |
+| Lasso (α = 1.0)           | 152.15   | 111.91   | 0.299   |
+| Lasso (α = 10.0)          | 153.21   | 113.01   | 0.289   |
+
+These results indicate that incorporating non-linear and interaction effects improves predictive accuracy compared to simpler linear models. Time-related features such as hour of day and working day status were the strongest contributors to model performance.
 
